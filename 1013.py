@@ -1,5 +1,10 @@
-# Bruteforce answer
+a, b, c = map(int, input().split(maxsplit=3))
 
-# l = [x for x in map(int, input().split(maxsplit=3))]
+m = ((a + b) + abs(a-b)) / 2
 
-# print(f"{max(l)} eh o maior")
+# if m > c:
+#     print(f"{m:.0f} eh o maior")
+# else:
+#     print(f"{c:.0f} eh o maior")
+
+print(f"{(((m + c) + abs(m - c)) / 2):.0f} eh o maior")
